@@ -30,6 +30,7 @@ class AppTheme {
     textTheme: GoogleFonts.poppinsTextTheme(),
     scaffoldBackgroundColor: Colors.white,
   );
+
   static final darkTheme = ThemeData(
     useMaterial3: true,
     colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xffFF5757))

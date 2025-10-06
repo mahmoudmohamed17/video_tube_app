@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:video_tube_app/core/routing/app_routing.dart';
 import 'package:video_tube_app/core/theme/app_theme.dart';
 
 class MyApp extends StatelessWidget {
@@ -6,7 +7,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'VideoTube',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
@@ -14,15 +15,7 @@ class MyApp extends StatelessWidget {
       themeAnimationCurve: Curves.fastOutSlowIn,
       themeAnimationDuration: const Duration(milliseconds: 1500),
       themeMode: ThemeMode.light, // Would be changed later using ThemeCubit
-      home: Scaffold(
-        body: Column(
-          children: [
-            Text('data', style: TextStyle(
-              color: Theme.of(context).colorScheme.tertiaryFixed,
-            ),)
-          ],
-        ),
-      ),
+      routerConfig: AppRouting.router,
     );
   }
 }

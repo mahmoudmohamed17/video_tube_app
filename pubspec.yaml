@@ -1,18 +1,22 @@
 name: video_tube_app
 description: "A new Flutter project."
-publish_to: 'none' 
+publish_to: 'none'
 version: 1.0.0+1
 environment:
   sdk: ^3.9.2
 dependencies:
+  bloc: ^9.0.1
+  cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.1.1
   flutter_native_splash: ^2.4.6
+  get_it: ^8.2.0
+  go_router: ^16.2.4
   google_fonts: ^6.3.2
 dev_dependencies:
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
 flutter:
   uses-material-design: true
